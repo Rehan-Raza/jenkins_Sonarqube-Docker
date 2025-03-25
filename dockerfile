@@ -4,7 +4,7 @@ FROM openjdk:17-jdk-slim
 # Set the working directory
 WORKDIR /app
 
-
+COPY . /app
 
 # Expose application port (default 8080 for Spring Boot)
 EXPOSE 8081
