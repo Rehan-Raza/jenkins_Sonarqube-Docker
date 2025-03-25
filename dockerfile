@@ -5,7 +5,7 @@ FROM openjdk:17-jdk-slim
 WORKDIR /app
 
 # Copy the JAR file into the container
-COPY /root/.jenkins/workspace/jenkins-maven/target/*.jar app.jar
+COPY . /app
 
 # Expose application port (default 8080 for Spring Boot)
 EXPOSE 8081
