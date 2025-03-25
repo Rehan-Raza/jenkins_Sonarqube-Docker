@@ -23,7 +23,7 @@
     <dependency>
        <groupId>org.jmockit</groupId>
        <artifactId>jmockit</artifactId>
-       <version>1.21</version>
+       <version>1.49.2</version>
        <scope>test</scope>
     </dependency>
     <dependency>
