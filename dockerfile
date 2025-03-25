@@ -1,3 +1,3 @@
-FROM openjdk:8
-EXPOSE 8080
+FROM alpine:3.13.5
+EXPOSE 8081
 
