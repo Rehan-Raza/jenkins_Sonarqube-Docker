@@ -60,7 +60,7 @@
     <dependency>
         <groupId>info.cukes</groupId>
         <artifactId>cucumber-java8</artifactId>
-        <version>7.15.0</version>
+        <version>1.2.3</version>
         <scope>test</scope>
     </dependency>    
 
@@ -71,7 +71,7 @@
           <plugin>
               <groupId>org.apache.maven.plugins</groupId>
               <artifactId>maven-compiler-plugin</artifactId>
-              <version>3.0.0-M7</version>
+              <version>{maven.compiler.version}</version>
               <configuration>
                   <argLine>--add-opens java.base/java.lang=ALL-UNNAMED --add-opens java.base/java.util=ALL-UNNAMED</argLine>
                   <encoding>UTF-8</encoding>
