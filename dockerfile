@@ -4,7 +4,7 @@ FROM maven:3.9.6-amazoncorretto-17 AS build
 WORKDIR /app
 
 # Clone the project from GitHub (Replace with your repo URL)
-RUN git clone https://github.com/Rehan-Raza/jenkins_Sonarqube-Docker.git .
+RUN git clone https://github.com/Rehan-Raza/jenkins_Sonarqube-Docker.git
 
 # Build the project (Skip tests for faster build)
 RUN mvn clean package -DskipTests
