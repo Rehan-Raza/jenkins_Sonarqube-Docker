@@ -73,6 +73,7 @@
               <artifactId>maven-compiler-plugin</artifactId>
               <version>${maven.compiler.version}</version>
               <configuration>
+                  <argLine>--add-opens java.base/java.lang=ALL-UNNAMED --add-opens java.base/java.util=ALL-UNNAMED</argLine>
                   <encoding>UTF-8</encoding>
                   <source>${java.version}</source>
                   <target>${java.version}</target>
