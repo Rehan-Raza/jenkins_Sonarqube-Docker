@@ -1,8 +1,14 @@
-# Stage 1: Build the application using Maven
-FROM maven:3.9.6-amazoncorretto-17 AS build
-# Set working directory
+# Use an official OpenJDK runtime as the base image
+FROM openjdk:17-jdk-slim
+
+# Set the working directory
 WORKDIR /app
 
-# Expose application port (Adjust if needed)
+# Copy the JAR file into the container
+COPY /root/.jenkins/workspace/jenkins-maven/target/*.jar app.jar
+
+# Expose application port (default 8080 for Spring Boot)
 EXPOSE 8081
 
+# Command to run the application
+CMD ["java", "-jar", "app.jar"]
