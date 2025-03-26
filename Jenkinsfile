@@ -14,6 +14,14 @@ pipeline {
             }
             }
         }
+
+       stage('Evaluate Test Results') {
+            steps {
+                script {
+                    testUtils.checkTestResults(this)
+                }
+            }
+        }
         
         stage('SonarQube Analysis') {
             steps {
@@ -22,9 +30,7 @@ pipeline {
                 }
                 }
             }
-        
-
-        
+      
         stage('docker build & push'){
             steps{
                 script{
