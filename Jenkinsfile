@@ -32,6 +32,7 @@ pipeline {
                     dockerUtils.buildImage(this)
                     dockerUtils.loginDocker(this)
                     dockerUtils.pushImage(this)
+                    dockerUtils.runContainer(this)
                 }
                 }
             }
